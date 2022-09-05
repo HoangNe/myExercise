@@ -3,6 +3,14 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {},
+    keyframes: {
+      run: {
+        to: { transform: "translateX(200%)" },
+      },
+    },
+    animation: {
+      run: "run 2s infinite",
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

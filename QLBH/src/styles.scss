@@ -2,3 +2,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.slick-slide img {
+  max-height: 150px;
+}
+
+.img-slider {
+  position: relative;
+}
+
+.img img {
+  max-width: 100%;
+  min-height: 150px !important;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.slick-initialized .slick-slide {
+  margin-left: 20px;
+}
+
+.img-slider .slick-arrow {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 40%;
+  border: none;
+  z-index: 10;
+  padding: 5px 10px;
+}
+
+.slick-arrow:hover {
+  background-color: #444444;
+}
+
+.img-slider .slick-prev {
+  background-color: lightgray;
+  color: #999999;
+}
+
+.img-slider .slick-next {
+  background-color: lightgray;
+  color: #999999;
+  right: 0;
+}
